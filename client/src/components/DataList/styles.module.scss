@@ -1,0 +1,24 @@
+:global(.ui.divided.middle.aligned.list) {
+  margin-top: 0;
+  :global(.item) {
+    padding: 10px;
+    &:last-child {
+      border-radius: 0 0 5px 5px;
+    }
+
+    :local(.assignees) {
+      width: 6em;
+      margin-right: 1em !important;
+      text-align: center;
+    }
+  }
+
+  :global(.item):hover {
+    background-color: #f6f6f6;
+  }
+
+  :global(.circle.mini.icon):local(.circleDivider) {
+    margin: 0 5px;
+    vertical-align: middle;
+  }
+}
